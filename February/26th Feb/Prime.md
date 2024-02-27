@@ -1,7 +1,7 @@
 # Check Prime
 
 ```java
-public static boolean isPrime(int num) {
+public static boolean isPrime(int num) { // TC -> O(n * Log(log n))
   if (num <= 1)
     return false;
 
