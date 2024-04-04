@@ -1,0 +1,27 @@
+- what is void type and when to use it
+- primitive types in typescript?
+- behaviour of array in typescript?
+- how many ways we can declare a variavle in typescript?
+- differenece between explicit and implicit variable in TS?
+- what is any type and when to use it?
+- difference between unknown and any type?
+- how to specify optional typing in TS?
+- how to create object in TS
+- explain concept of null and when to use it?
+- Explain the purpose of never type in typescript
+- difference in void and never?
+- what is undefined in TS?
+- explain how Enum works in TS??
+- what is the use of Typeof operator
+- what is parameter destructing?
+- what is alias in TS?
+- what are interfaces in tS?
+- what is purpose of tsconfig.json file?
+- what are the advantages and disadvantages in TS?
+- what are tuples in typescript?
+- what are function overloading in TS?
+- what are the different ways for controlling the visibility of the member data?
+- in what situation we use class or interface
+- what are modules in TS?
+- explain union type in TS?
+- how to covert TS to JS file
