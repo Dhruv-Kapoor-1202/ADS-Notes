@@ -23,8 +23,10 @@ public class BT {
 
     System.out.println("\n\nLevel Order : ");
     tree.levelOrder();
-    System.out.println("\n\nRight View : ");
+    System.out.println("Right View : ");
     tree.rightView();
+    System.out.println("Left View : ");
+    tree.leftView();
   }
 }
 
@@ -102,7 +104,7 @@ class Tree {
     Node curr;
     Queue<Node> que = new LinkedList<>();
     que.add(root);
-    System.out.println(root.data);
+    // System.out.println(root.data);
 
     while (!que.isEmpty()) {
       int x = que.size();
@@ -116,7 +118,35 @@ class Tree {
         }
         x--;
         if (x == 0)
-          System.out.println(que.poll().data);
+          System.out.println(curr.data);
+      }
+    }
+  }
+
+  public void leftView() {
+    if (root == null)
+      return;
+
+    Node curr;
+    Queue<Node> que = new LinkedList<>();
+    que.add(root);
+
+    while (!que.isEmpty()) {
+      // Number of Nodes at the current level
+      int x = que.size();
+
+      // Traversing all nodes at the current level
+      for (int i = 1; i <= x; i++) {
+        curr = que.poll();
+        if (i == 1) {
+          System.out.println(curr.data);
+        }
+        if (curr.left != null) {
+          que.add(curr.left);
+        }
+        if (curr.right != null) {
+          que.add(curr.right);
+        }
       }
     }
   }
