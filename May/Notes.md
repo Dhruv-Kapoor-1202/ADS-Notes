@@ -53,3 +53,13 @@ flowchart LR
 - minimum out of the neighbors
 
 [Graph](dia.excalidraw)
+
+
+# Belman Ford 
+
+- It is used to detext a negative cycle in a graph
+
+
+
+a[0]
+0[a]
